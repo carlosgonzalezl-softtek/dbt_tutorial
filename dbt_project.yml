@@ -39,3 +39,6 @@ models:
     dw:
       schema: DW
       materialized: table
+    semantic:
+      schema: SMT
+      materialized: view
