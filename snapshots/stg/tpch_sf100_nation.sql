@@ -1,4 +1,5 @@
 {% snapshot tpch_sf100_nation %}
+
 {{
     config(
         strategy='check',

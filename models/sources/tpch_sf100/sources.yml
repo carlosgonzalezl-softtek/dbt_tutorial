@@ -9,3 +9,4 @@ sources:
       - name: nation
       - name: orders
       - name: part
+      - name: region
