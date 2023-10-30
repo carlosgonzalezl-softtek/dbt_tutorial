@@ -22,7 +22,11 @@ sources:
       - name: region
 
   - name: source_data
-    database: source_dev
+    database: |
+              {%- if target.name.upper() == "PRD" -%} SOURCE_PRD
+              {%- elif target.name.upper() == "DEV" -%} SOURCE_DEV
+              {%- else -%} SOURCE_DEV
+              {%- endif -%}
     schema: schema_data
     tables:
       - name: customer
