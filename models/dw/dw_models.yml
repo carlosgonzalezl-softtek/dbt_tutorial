@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: dim_nation
+      description: "Nation dimension"
+      columns:
+          - name: nation_id
+            description: "Nation PK"
+            tests:
+                - unique
+                - not_null
