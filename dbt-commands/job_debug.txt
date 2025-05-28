@@ -1,1 +1,2 @@
 dbt debug
+dbt compile
